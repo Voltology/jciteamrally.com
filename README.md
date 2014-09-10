@@ -1,2 +1,2 @@
-jci-team-rally
+JCI Team Rally
 ==============
