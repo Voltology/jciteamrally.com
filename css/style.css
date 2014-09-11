@@ -1,0 +1,39 @@
+body {
+  background: url(http://www.johnsoncontrols.com/apps/jci/docroot/images/bg.png) repeat-x #ddd;
+  color: #555;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0;
+  text-align: center;
+}
+form {
+  position: relative;
+}
+.fileinput-button {
+  background-image: url(http://www.johnsoncontrols.com/apps/jci/docroot/images/menubg.png);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  height: 18px;
+  padding: 11px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+.fileinput-button input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	transform: translate(-300px, 0) scale(4);
+	font-size: 23px;
+	direction: ltr;
+	cursor: pointer;
+}
+#upload-button {
+  display: none;
+}
