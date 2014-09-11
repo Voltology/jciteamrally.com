@@ -24,12 +24,13 @@ require(".local.inc.php");
       <div>
         <strong>Selected File:&nbsp;</strong>
         <span id="selected-file"></span>
+        (<a href="#">Choose Another</a>)
       </div>
-      <div class="fileinput-button">
+      <div class="fileinput-button button">
         <span>Select Photo</span>
         <input type="file" name="files[]" id="file" />
       </div>
-      <button type="submit" id="upload-button">Start Upload</button>
+      <button type="submit" class="button" id="upload-button">Start Upload</button>
     </form>
   </body>
 </html>

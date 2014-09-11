@@ -10,9 +10,11 @@ body {
 form {
   position: relative;
 }
-.fileinput-button {
+.button {
   background-image: url(http://www.johnsoncontrols.com/apps/jci/docroot/images/menubg.png);
+  background-size: 100% 100%;
   border-radius: 8px;
+  border: 0;
   color: #fff;
   font-size: 20px;
   height: 42px;
