@@ -1,6 +1,6 @@
 * { box-sizing: border-box }
 body {
-  background: url(http://www.johnsoncontrols.com/apps/jci/docroot/images/bg.png) repeat-x #ddd;
+  background: url(http://www.johnsoncontrols.com/apps/jci/docroot/images/bg.png) repeat-x #eee;
   color: #555;
   font-family: Arial, Helvetica, Verdana, sans-serif;
   margin: 0px;
@@ -16,14 +16,20 @@ form {
   border-radius: 8px;
   border: 0;
   color: #fff;
+  cursor: pointer;
   font-size: 20px;
   height: 42px;
   padding: 11px;
 	position: relative;
 	overflow: hidden;
-	margin: 0 auto;
+	margin: 80px auto;
   text-align: center;
   width: 90%;
+}
+.error {
+  color: #c00;
+  display: none;
+  font-weight: bold;
 }
 .fileinput-button input {
 	position: absolute;
@@ -35,7 +41,12 @@ form {
 	transform: translate(-300px, 0) scale(4);
 	font-size: 23px;
 	direction: ltr;
-	cursor: pointer;
+}
+.logo {
+  margin: 20px 0 80px 0;
+}
+#selected-file {
+  display: none;
 }
 #upload-button {
   display: none;

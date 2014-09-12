@@ -21,11 +21,12 @@ require(".local.inc.php");
     }
     ?>
     <form method="post" action="./" enctype="multipart/form-data">
-      <div>
+      <div id="selected-file">
         <strong>Selected File:&nbsp;</strong>
-        <span id="selected-file"></span>
+        <span id="selected-file-name">--</span>
         (<a href="#">Choose Another</a>)
       </div>
+      <div class="error">Your device is not supported.</div>
       <div class="fileinput-button button">
         <span>Select Photo</span>
         <input type="file" name="files[]" id="file" />
