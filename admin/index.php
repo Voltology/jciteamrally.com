@@ -1,6 +1,6 @@
 <?php
-require("../../.local.inc.php");
-$password = "unexpected";
+require("../.local.inc.php");
+$password = "teamrally2014";
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
   if ($_POST['password'] === $password) {
     setcookie("password", $password);
@@ -22,20 +22,16 @@ if ($action === "approve") {
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Populous Digital : UNEXPECTED Photobooth</title>
+    <title>JCI Team Rally Admin</title>
     <meta charset='utf-8'>
     <link rel="stylesheet" href="/css/admin.css" />
-    <link rel="stylesheet" href="/css/font-awesome.css">
-    <!--[if IE 7]>
-    <link rel="stylesheet" href="/css/global/font-awesome-ie7.min.css">
-    <![endif]-->
   </head>
   <body>
     <table width="100%" cellspacing="0" cellpadding="0">
       <tr>
         <td colspan="2" valign="middle" class="header">
           <div class="header-logo">
-            <a href="http://bma.populousdigital.com"><img src="/img/logo.png" /></a>
+            <a href="http://www.jciteamrally.com"><img src="..//img/logo.gif" height="80" /></a>
           </div>
           <div class="header-admin">Administration Area</div>
         </td>
@@ -92,11 +88,7 @@ if ($action === "approve") {
                     while ($row = mysql_fetch_assoc($result)) {
                       echo "<tr>";
                       echo "<td valign=\"top\"><input type=\"checkbox\" onclick=\"document.location='?a=approve&id=" . $row['id'] . "'\" /></td>";
-                      if ($row['type'] === "instagram" || $row['type'] === "photobooth") {
-                        echo "<td valign=\"top\"><strong>@" . $row['username'] . ":</strong><br /><a href=\"" . $row['text'] . "\" target=\"_blank\"><img src=\"" . $row['text'] . "\" height=\"100\" width=\"100\"/></a><br />Click to Enlarge</td>";
-                      } else if ($row['type'] === "twitter") {
-                        echo "<td valign=\"top\"><strong>@" . $row['username'] . ":</strong><br />" . $row['text'] . "</td>";
-                      }
+                      echo "<td valign=\"top\"><a href=\"" . $row['text'] . "\" target=\"_blank\"><img src=\"" . $row['text'] . "\" width=\"80\" /></a></td>";
                       echo "<td valign=\"top\">" . ucwords($row['type']) . "</td>";
                       echo "<td valign=\"top\" width=\"120\">" . date("m-d-y, g:i a", $row['creation'] + 7200) . "</td>";
                       echo "<td align=\"right\" valign=\"top\"><a href=\"?a=remove&id=" . $row['id'] . "\" alt=\"Delete\" title=\"Delete\"><img src=\"../img/cross.png\" /></a></td>";
@@ -125,11 +117,7 @@ if ($action === "approve") {
                     while ($row = mysql_fetch_assoc($result)) {
                       echo "<tr>";
                       echo "<td valign=\"top\"><input type=\"checkbox\" onclick=\"document.location='?a=unapprove&id=" . $row['id'] . "'\" checked /></td>";
-                      if ($row['type'] === "instagram" || $row['type'] === "photobooth") {
-                        echo "<td valign=\"top\"><strong>@" . $row['username'] . ":</strong><br /><a href=\"" . $row['text'] . "\" target=\"_blank\"><img src=\"" . $row['text'] . "\" height=\"100\" width=\"100\"/></a><br />Click to Enlarge</td>";
-                      } else if ($row['type'] === "twitter") {
-                        echo "<td valign=\"top\"><strong>@" . $row['username'] . ":</strong><br />" . $row['text'] . "</td>";
-                      }
+                      echo "<td valign=\"top\"><a href=\"" . $row['text'] . "\" target=\"_blank\"><img src=\"" . $row['text'] . "\" width=\"80\" /></a></td>";
                       echo "<td valign=\"top\">" . ucwords($row['type']) . "</td>";
                       echo "<td valign=\"top\" width=\"120\">" . date("m-d-y, g:i a", $row['creation'] + 7200) . "</td>";
                       echo "</tr>";

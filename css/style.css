@@ -16,7 +16,6 @@ form {
   border-radius: 8px;
   border: 0;
   color: #fff;
-  cursor: pointer;
   font-size: 20px;
   height: 42px;
   padding: 11px;
@@ -41,13 +40,20 @@ form {
 	transform: translate(-300px, 0) scale(4);
 	font-size: 23px;
 	direction: ltr;
+	cursor: pointer;
 }
 .logo {
   margin: 20px 0 80px 0;
 }
-#selected-file {
+#click-upload-container {
+  display: none;
+}
+#selected-file-container {
   display: none;
 }
 #upload-button {
   display: none;
+}
+#upload-container {
+  font-size: 20px;
 }

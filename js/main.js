@@ -1,9 +1,12 @@
 $(document).ready(function() {
   $('#file').change(function() {
     var filepath = $(this).val().split(/\\/);
-    $('#selected-file').show();
-    $('#selected-file-name').html(filepath[filepath.length - 1]);
+    $('#selected-file').html(filepath[filepath.length - 1]);
     $('#upload-button').show();
+    $('#upload-container').hide();
+    $('#select-selfie-container').hide();
+    $('#click-upload-container').show();
+    $('#selected-file-container').show();
     $('.fileinput-button').hide();
   });
 

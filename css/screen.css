@@ -1,0 +1,118 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body {
+  background: url(http://www.johnsoncontrols.com/apps/jci/docroot/images/bg.png) repeat-x #eee;
+  color: #000;
+  font-family: verdana;
+  margin: 0;
+  padding: 0;
+  height: 1200px;
+  width: 1900px;
+}
+h1 {
+  float: right;
+  margin: 10px 20px 0 0;
+  text-align: center;
+}
+ul {
+  color: #000;
+  display: block;
+  list-style-type: none;
+  margin: 0 auto;
+  margin-left: 2px;
+  padding: 0;
+}
+li {
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.2em;
+  list-style-type: none;
+  height: 344px;
+  margin: 3px;
+  overflow: hidden;
+  padding: 6px;
+  position: relative;
+  vertical-align: top;
+  visibility: hidden;
+  width: 262px;
+}
+p {
+  font-size: 30px;
+}
+strong {
+  margin: 15px 0 0 15px;
+}
+.author {
+  bottom: 8px;
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+}
+.right {
+  float: right;
+  margin: 60px 14px 0 0;
+}
+.instagram {
+}
+.panel {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  vertical-align: top;
+}
+#selected-file-container {
+  display: none;
+}
+.social-icon {
+  display: none;
+  bottom: 5px;
+  left: 10px;
+  position: absolute;
+}
+.social-icon img {
+  display: none;
+  height 25px;
+  width: 35px;
+}
+.animated {
+    -webkit-transition: 1.0s ease-out;
+       -moz-transition: 1.0s ease-out;
+        -ms-transition: 1.0s ease-out;
+         -o-transition: 1.0s ease-out;
+            transition: 1.0s ease-out;
+}
+.flipped-horizontal-right {
+  -webkit-transform: rotateY(360deg);
+     -moz-transform: rotateY(360deg);
+      -ms-transform: rotateY(360deg);
+       -o-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+.flipped-horizontal-left {
+  -webkit-transform: rotateY(-360deg);
+     -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+       -o-transform: rotateY(-360deg);
+          transform: rotateY(-360deg);
+}
+.flipped-vertical-top {
+  -webkit-transform: rotateX(360deg);
+     -moz-transform: rotateX(360deg);
+      -ms-transform: rotateX(360deg);
+       -o-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+}
+.flipped-vertical-bottom {
+  -webkit-transform: rotateX(-360deg);
+     -moz-transform: rotateX(-360deg);
+      -ms-transform: rotateX(-360deg);
+       -o-transform: rotateX(-360deg);
+          transform: rotateX(-360deg);
+}
