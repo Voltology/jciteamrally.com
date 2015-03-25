@@ -73,7 +73,7 @@ if ($action === "approve") {
                 <td width="50%" valign="top">
                   <h2>Unapproved</h2>
                   <?php
-                  $query = sprintf("SELECT * FROM social WHERE authorized='0' AND deleted!='1' AND creation > " . (time() - 43200) . " ORDER BY creation DESC");
+                  $query = sprintf("SELECT * FROM social WHERE authorized='0' AND deleted!='1' ORDER BY creation DESC");
                   $result = mysql_query($query);
                   ?>
                   <table width="100%" border="0" cellpadding="4" cellspacing="0" class="edit-table">
@@ -103,7 +103,7 @@ if ($action === "approve") {
                 <td width="50%" valign="top">
                   <h2>Approved</h2>
                   <?php
-                  $query = sprintf("SELECT * FROM social WHERE authorized='1' AND deleted!='1' AND creation > " . (time() - 43200) . " ORDER BY creation DESC");
+                  $query = sprintf("SELECT * FROM social WHERE authorized='1' AND deleted!='1' ORDER BY creation DESC");
                   $result = mysql_query($query);
                   ?>
                   <table width="100%" border="0" cellpadding="4" cellspacing="0" class="edit-table">

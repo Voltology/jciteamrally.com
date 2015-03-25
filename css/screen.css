@@ -9,8 +9,6 @@ html, body {
   font-family: verdana;
   margin: 0;
   padding: 0;
-  height: 1200px;
-  width: 1900px;
 }
 h1 {
   float: right;
@@ -34,14 +32,14 @@ li {
   font-size: 12px;
   line-height: 1.2em;
   list-style-type: none;
-  height: 344px;
+  height: 530px;
   margin: 3px;
   overflow: hidden;
   padding: 6px;
   position: relative;
   vertical-align: top;
   visibility: hidden;
-  width: 262px;
+  width: 940px;
 }
 p {
   font-size: 30px;

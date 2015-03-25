@@ -27,8 +27,8 @@
         //WAVE 3x2
         //for (var i = 1; i <= 6; i++) {
         //WAVE 2x1
-        for (var i = 1; i <= 3; i++) {
-          var rand = Math.floor(Math.random() * 3) + 1;
+        for (var i = 1; i <= 4; i++) {
+          var rand = Math.floor(Math.random() * 4) + 1;
           $grid.append('<li id="panel' + i + '"></li>');
         }
         getData();
@@ -82,7 +82,7 @@
           //WAVE 3x2
           //var rand = Math.floor(Math.random() * 6) + 1;
           //WAVE 2x1
-          var rand = Math.floor(Math.random() * 3) + 1;
+          var rand = Math.floor(Math.random() * 4) + 1;
           flipPanel('panel' + rand);
           randFlip();
         }, 6000);
